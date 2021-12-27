@@ -1,0 +1,66 @@
+:root {
+  --first-logo-color: #2196f3;
+  --second-logo-color: #000000;
+  --third-logo-color: #ffffff;
+  --main-heading-color: #ffffff;
+  --first-btn-text-color: #ffffff;
+  --second-btn-text-color: #212121;
+  --header-color: #212121;
+  --first-text-color: #212121;
+  --second-text-color: #757575;
+  --third-text-color: #ffffff;
+  --link-text-color: #2196f3;
+  --accent-color: #2196f3;
+  --dark-background-color: #2f303a;
+  --footer-link-color: rgba(255, 255, 255, 0.6);
+  --backgroun-color: #ffffff;
+  --background-btn-color: #f5f4fa;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+button {
+  cursor: pointer;
+}
+li {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #212121;
+}
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.section {
+  padding-bottom: 94px;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+.list {
+  list-style: none;
+  display: flex;
+}
+.link {
+  text-decoration: none;
+}
