@@ -41,10 +41,11 @@
           <a class="connect__tel-link link" href="tel:+380961111111">+38 096 111 11 11</a>
         </div>
       </div>
+      
     </header>
     <main class="main">
-      <section class="main-section section">
-        <div class="main-container">
+      <section class="main-section">
+        <div class="main-container container">
           <h1 class="main-container__heading">
             Эффективные решения<br />
             для вашего бизнеса
@@ -135,12 +136,29 @@
           <h2 class="main-second-heading">Наша команда</h2>
           <ul class="our-team-list list">
             <li class="our-team-list__item">
-              <img src="./images/person-1.jpg" alt="Игорь Демьяненко" width="270" height="260" />
+              <picture>
+                <source 
+                srcset="./images/person-1.jpg 1x,   
+                        ./images/person-1-2x.jpg 2x"
+                media="(min-width:1200px)"
+                />
+                <source 
+                srcset="./images/person-1-tab-1x.jpg 1x,   
+                        ./images/person-1-tab-2x.jpg 2x"
+                media="(min-width:768px)"
+                />
+                <source 
+                srcset="./images/person-1-mob-1x.jpg 1x,   
+                        ./images/person-1-mob-2x.jpg 2x"
+                media="(min-width:320px)"
+                />
+                <img src="./images/person-1.jpg" alt="Игорь Демьяненко" />
+              </picture>
               <div class="our-team-list__text">
                 <h3 class="our-team-list__heading-item">Игорь Демьяненко</h3>
                 <p class="our-team-list__ph-item" lang="en">Product Designer</p>
-                <ul class="list">
-                  <li class="icon">
+                <ul class="list icon-list">
+                  <li class="icon ">
                     <a class="icon--white-background icon__link" href="">
                       <svg class="icon--grey-icon" width="20" height="20">
                         <use href="./images/icons.svg#icon-social-icon-svg-1"></use>
@@ -172,11 +190,28 @@
               </div>
             </li>
             <li class="our-team-list__item">
-              <img src="./images/person-2.jpg" alt="Ольга Репина" width="270" height="260" />
+              <picture class="our-team-list_picture">
+                <source 
+                srcset="./images/person-2.jpg 1x,   
+                        ./images/person-2-2x.jpg 2x"
+                media="(min-width:1200px)"
+                />
+                <source 
+                srcset="./images/person-2-tab-1x.jpg 1x,   
+                        ./images/person-2-tab-2x.jpg 2x"
+                media="(min-width:768px)"
+                />
+                <source 
+                srcset="./images/person-2-mob-1x.jpg 1x,   
+                        ./images/person-2-mob-2x.jpg 2x"
+                media="(min-width:320px)"
+                />
+                <img src="./images/person-2.jpg" alt="Ольга Репина" />
+              </picture>
               <div class="our-team-list__text">
                 <h3 class="our-team-list__heading-item">Ольга Репина</h3>
                 <p class="our-team-list__ph-item" lang="en">Frontend Developer</p>
-                <ul class="list">
+                <ul class="list icon-list">
                   <li class="icon">
                     <a class="icon--white-background icon__link" href="">
                       <svg class="icon--grey-icon" width="20" height="20">
@@ -209,11 +244,28 @@
               </div>
             </li>
             <li class="our-team-list__item">
-              <img src="./images/person-3.jpg" alt="Николай Тарасов" width="270" height="260" />
+              <picture>
+                <source 
+                srcset="./images/person-3.jpg 1x,   
+                        ./images/person-3-2x.jpg 2x"
+                media="(min-width:1200px)"
+                />
+                <source 
+                srcset="./images/person-3-tab-1x.jpg 1x,   
+                        ./images/person-3-tab-2x.jpg 2x"
+                media="(min-width:768px)"
+                />
+                <source 
+                srcset="./images/person-3-mob-1x.jpg 1x,   
+                        ./images/person-3-mob-2x.jpg 2x"
+                media="(min-width:320px)"
+                />
+                <img src="./images/person-3.jpg" alt="Николай Тарасов" />
+              </picture>
               <div class="our-team-list__text">
                 <h3 class="our-team-list__heading-item">Николай Тарасов</h3>
                 <p class="our-team-list__ph-item" lang="en">Marketing</p>
-                <ul class="list">
+                <ul class="list icon-list">
                   <li class="icon">
                     <a class="icon--white-background icon__link" href="">
                       <svg class="icon--grey-icon" width="20" height="20">
@@ -246,11 +298,28 @@
               </div>
             </li>
             <li class="our-team-list__item">
-              <img src="./images/person-4.jpg" alt="Михаил Ермаков" width="270" height="260" />
+              <picture>
+                <source 
+                srcset="./images/person-4.jpg 1x,   
+                        ./images/person-4-2x.jpg 2x"
+                media="(min-width:1200px)"
+                />
+                <source 
+                srcset="./images/person-4-tab-1x.jpg 1x,   
+                        ./images/person-4-tab-2x.jpg 2x"
+                media="(min-width:768px)"
+                />
+                <source 
+                srcset="./images/person-4-mob-1x.jpg 1x,   
+                        ./images/person-4-mob-2x.jpg 2x"
+                media="(min-width:320px)"
+                />
+                <img src="./images/person-4.jpg" alt="Михаил Ермаков" />
+              </picture>
               <div class="our-team-list__text">
                 <h3 class="our-team-list__heading-item">Михаил Ермаков</h3>
                 <p class="our-team-list__ph-item" lang="en">UI Designer</p>
-                <ul class="list">
+                <ul class="list icon-list">
                   <li class="icon">
                     <a class="icon--white-background icon__link" href="">
                       <svg class="icon--grey-icon" width="20" height="20">
@@ -332,63 +401,70 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container footer-container">
         <a id="contacts"></a>
-        <div class="footer-address">
-          <a class="logo footer-logo link" href="./index.html" rel="home"
-            >Web<span class="logo--white">Studio</span></a
-          >
-          <address class="address f-e">г. Киев, пр-т Леси Украинки, 26</address>
-          <a class="footer-mail-link link f-e" href="mailto:info@devstudio.com"
-            >info@devstudio.com</a
-          >
-          <a class="footer-tel-link link f-e" href="tel:+380961111111">+38 096 111 11 11</a>
-        </div>
-        <div class="footer-follow">
-          <p class="footer-ph">присоединяйтесь</p>
-          <ul class="list">
-            <li class="icon">
-              <a class="icon--grey-background icon__link" href="">
-                <svg class="icon--white-icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-social-icon-svg-1"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="icon">
-              <a class="icon--grey-background icon__link" href="">
-                <svg class="icon--white-icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-social-icon-svg-2"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="icon">
-              <a class="icon--grey-background icon__link" href="">
-                <svg class="icon--white-icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-social-icon-svg-3"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="icon">
-              <a class="icon--grey-background icon__link" href="">
-                <svg class="icon--white-icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-social-icon-svg-4"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+        <div class="footer-tab">
+          <div class="footer-address">
+            <a class="logo footer-logo link" href="./index.html" rel="home"
+              >Web<span class="logo--white">Studio</span></a
+            >
+            <address class="address f-e">г. Киев, пр-т Леси Украинки, 26</address>
+            <a class="footer-mail-link link f-e" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+            <a class="footer-tel-link link f-e" href="tel:+380961111111">+38 096 111 11 11</a>
+          </div>
+          <div class="footer-follow">
+            <p class="footer-ph">присоединяйтесь</p>
+            <ul class="list icon-list">
+              <li class="icon">
+                <a class="icon--grey-background icon__link" href="">
+                  <svg class="icon--white-icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-social-icon-svg-1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="icon">
+                <a class="icon--grey-background icon__link" href="">
+                  <svg class="icon--white-icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-social-icon-svg-2"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="icon">
+                <a class="icon--grey-background icon__link" href="">
+                  <svg class="icon--white-icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-social-icon-svg-3"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="icon">
+                <a class="icon--grey-background icon__link" href="">
+                  <svg class="icon--white-icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-social-icon-svg-4"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
         <div class="subscripe">
           <p class="subscripe__ph">Подпишитесь на рассылку</p>
           <div class="subscripe__container">
             <label for="subscripe-mail" class="subscripe__input-label">
-              <input type="email" name="subscripe-mail" class="subscripe__input" placeholder="E-mail" />
+              <input
+                type="email"
+                name="subscripe-mail"
+                class="subscripe__input"
+                placeholder="E-mail"
+              />
             </label>
             <button type="submit" class="subscripe__btn btn">Подписаться</button>
           </div>
         </div>
       </div>
-    </footer>
+    </footer> -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-close" data-modal-close>

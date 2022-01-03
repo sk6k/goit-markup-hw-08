@@ -6,24 +6,74 @@
 }
 .main-section {
   background-color: var(--dark-background-color);
-  background-image: url(../images/img-overlay.png), url(../images/main-img.jpg);
+  background-image: url(../images/img-overlay-mob-1x.png), url(../images/main-img-mob-1x.jpg);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: cover;
   background-size: cover;
-  padding: 200px 0;
+  padding: 118px 0;
   max-width: 1600px;
   margin: 0 auto;
-}
-.main-container__heading {
-  margin-bottom: 30px;
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  text-align: center;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--main-heading-color);
-}
-.main-container__btn {
-  padding: 10px 32px 10px 32px;
+
+  @media screen and (min-width: 768px) {
+    padding: 118px 0;
+
+    @media screen and (min-width: 1200px) {
+      padding: 200px 0;
+    }
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/img-overlay-mob-2x.png), url(../images/main-img-mob-2x.jpg);
+    }
+
+    @media screen and (min-width: 768px) {
+      background-image: url(../images/img-overlay-tab-1x.png), url(../images/main-img-tab-1x.jpg);
+      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image: url(../images/img-overlay-tab-2x.png), url(../images/main-img-tab-2x.jpg);
+      }
+    }
+
+    @media screen and (min-width: 1200px) {
+      background-image: url(../images/img-overlay-desk-1x.png), url(../images/main-img-desk-1x.jpg);
+      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image: url(../images/img-overlay-desk-2x.png),
+          url(../images/main-img-desk-2x.jpg);
+      }
+    }
+  }
+  .main-container__heading {
+    margin-bottom: 30px;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--main-heading-color);
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 30px;
+      font-weight: 900;
+      font-size: 26px;
+      line-height: 1.36;
+      text-align: center;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--main-heading-color);
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 30px;
+      font-weight: 900;
+      font-size: 44px;
+      line-height: 1.36;
+      text-align: center;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--main-heading-color);
+    }
+  }
+
+  .main-container__btn {
+    padding: 10px 32px 10px 32px;
+  }
 }
