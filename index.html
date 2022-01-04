@@ -41,15 +41,16 @@
           <a class="connect__tel-link link" href="tel:+380961111111">+38 096 111 11 11</a>
         </div>
       </div>
-      <button type="button" class="open-mob-menu">
+      <button type="button" class="open-mob-menu" data-menu-open>
           <svg class="icon-open-mob-menu" width="40" height="40">
             <use href="./images/icons.svg#icon-open-mob-menu"></use>
           </svg>
         </button>
       </div>
-      <div class="mob-menu">
+      <div class="mob-menu is-hidden" data-menu>
         <div class="container">
-        <button type="button" class="close-mob-menu">
+          <div class="mob-menu-top">
+        <button type="button" class="close-mob-menu" data-menu-close>
           <svg class="icon-close-mob-menu" width="40" height="40">
             <use href="./images/icons.svg#icon-close-mob-menu"></use>
           </svg>
@@ -65,11 +66,13 @@
               <a class="mob-menu__link link" href="#contacts">Контакты</a>
             </li>
           </ul>
-          <div class="mob-menu-connect">
-            <a class="mob-menu-connect__tel-link link" href="tel:+380961111111">+38 096 111 11 11</a>
-          <a class="mob-menu-connect__mail-link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-        </div>
-         <ul class="list mob-social-list">
+          </div>
+          <div class="mob-menu-bottom">
+            <div class="mob-menu-connect">
+              <a class="mob-menu-connect__tel-link link" href="tel:+380961111111">+38 096 111 11 11</a>
+              <a class="mob-menu-connect__mail-link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </div>
+              <ul class="list mob-social-list">
                   <li class="mob-social-item">
                     <a class="mob-social-link link" href="#">
                       Instagram
@@ -77,7 +80,7 @@
                   </li>
                   <li class="mob-social-item">
                     <a class="mob-social-link link" href="#">
-                     Twitter
+                      Twitter
                     </a>
                   </li>
                   <li class="mob-social-item">
@@ -90,8 +93,9 @@
                       LinkedIn
                     </a>
                   </li>
-                </ul>
-                </div>
+              </ul>
+          </div>
+        </div>
       </div>
     </header>
     <main class="main">
@@ -575,5 +579,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
