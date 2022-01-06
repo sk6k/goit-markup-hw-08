@@ -560,6 +560,7 @@ img {
 
 .mob-menu-connect__mail-link {
   font-size: 24px;
+  font-weight: 500;
   line-height: 1.17;
   margin-bottom: 0;
   color: #757575;
@@ -724,6 +725,7 @@ img {
   .peculiarities-list__item {
     width: calc(100% / 2 - 15px);
     justify-content: start;
+    text-align: left;
   }
   .peculiarities-list__item:nth-child(2n + 1) {
     margin-right: 30px;
@@ -1432,7 +1434,7 @@ img {
   border-radius: 4px;
   padding: 40px;
   position: absolute;
-  top: calc(50% + 93px);
+  top: 50%;
   left: 50%;
   transform: scale(1) rotate(0) translate(-50%, -50%);
   transition: transform 400ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1442,7 +1444,6 @@ img {
   .modal {
     max-width: 528px;
     min-height: 581px;
-    top: 50%;
   }
 }
 
